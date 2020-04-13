@@ -32,17 +32,22 @@
 //
 // }
 // ==============================================
-function  tegHTML(name, description, attributesHTML={name, descr }) {
-this.name=name;
+function  tegHTML(name, description, attributesHTML=[{name, descr },{name,descr }])
+{
+    this.name=name;
     this.description=description;
-    this.attributesHTML={name:nameAtt, descr: descrAtt};
-
-
+    this.attributesHTML=attributesHTML;
 
 }
 
+let tegA = new tegHTML('a','Тег a является одним из важных элементов HTML и предназначен для создания ссылок.', [{name:'href', desct:'Задает адрес документа, на который следует перейти.'}, {name:'target', desct:'Имя окна или фрейма, куда браузер будет загружать документ.'}]);
 
+let tegDiv = new tegHTML('div','Элемент div является блочным элементом и предназначен для выделения фрагмента ',[{name:'align' ,desct:'Задает выравнивание содержимого тега'},{name:"title", desct:'Добавляет всплывающую подсказку к содержимому.'}]);
 
+let tegH1 = new tegHTML('h1',"HTML предлагает шесть заголовков разного уровня", [{name:"align", desct:"Определяет выравнивание заголовка."},{name:'', desct:''}]);
+console.log(tegA);
+console.log(tegDiv);
+console.log(tegH1);
 
 
 
