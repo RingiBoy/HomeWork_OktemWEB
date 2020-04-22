@@ -21,6 +21,7 @@
 // console.log(getBut2);
 // getBut2.onclick = () => {
 //     getBut2.style.display = 'none';
+
 // };
 
 
@@ -45,10 +46,28 @@
 // }
 // - Создайте меню, которое раскрывается/сворачивается при клике
 
-
-
+// let menu = document.getElementById('mainMenu')
+// let sub = document.getElementById('subMenu')
+// console.log(menu);
+// console.log(sub);
+// menu.onclick=()=>{
+// if (sub.style.display ==='none'){
+//     sub.style.display ='block'
+// }
+//  else {
+//     sub.style.display ='none'
+// }
+// };
 //
 // - Создать список комментариев , пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
+
+
+
+
+
+
+
+
 //     Вывести список комментариев в документ, каждый в своем блоке.
 //     Добавьте каждому комментарию по кнопке для сворачивания его body.
 //
