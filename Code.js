@@ -56,7 +56,6 @@
 //и другие теги с описаниями их атрибутов;
 
 
-
 //
 // ==============================================
 //     -  Створити класс  для об'єкту який описує теги
@@ -206,8 +205,6 @@
 // }
 
 
-
-
 //
 //
 // ==============================================
@@ -216,23 +213,22 @@
 // --Сторити об'єкт типу "принц" за допомоги функції конструктора з полями ім'я, вік, туфелька яку він знайшов, та функцію "пошук попелюшки"
 // -- функція повинна приймати масив попелюшок, та шукає ту котра йому підходить
 //
-class Popelushka{
-    constructor(name, age,foot) {
-        this.name=name;
-        this.age=age;
-        this.foot=foot;
+class Popelushka {
+    constructor(name, age, foot) {
+        this.name = name;
+        this.age = age;
+        this.foot = foot;
     }
- }
+}
 
- let sveta= new Popelushka('svetka',18,45);
+let sveta = new Popelushka('svetka', 18, 45);
 
-let lesya=new Popelushka('lesya',45,30);
-let klara=new Popelushka('klara',30,29);
-let ukrala=new Popelushka('ukrala',19,35);
-let koralu=new Popelushka('koralu',18,36);
-let tochka=new Popelushka('tochka',22,39);
-let krapka=new Popelushka('krapka',15,37);
-
+let lesya = new Popelushka('lesya', 45, 30);
+let klara = new Popelushka('klara', 30, 29);
+let ukrala = new Popelushka('ukrala', 19, 35);
+let koralu = new Popelushka('koralu', 18, 36);
+let tochka = new Popelushka('tochka', 22, 39);
+let krapka = new Popelushka('krapka', 15, 37);
 
 
 class Pruns extends Popelushka {
@@ -250,10 +246,10 @@ class Pruns extends Popelushka {
         }
     }
 }
+
 let Alex = new Pruns("Alex", 20, 37)
 let array = [sveta, lesya, klara, ukrala, koralu, tochka, krapka];
 Alex.findPopelushka(array);
-
 
 
 let serg = new Pruns("Serj", 33, 29);

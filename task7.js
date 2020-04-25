@@ -25,7 +25,6 @@
 // };
 
 
-
 //
 
 
@@ -61,17 +60,45 @@
 //
 // - Создать список комментариев , пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
 
+// arr = [{title: 'lorem4', body: 'lorem ipsum dolo sit ameti'}, {
+//     title: 'lorem6',
+//     body: 'lorem ipsum dolo sit ameti'
+// }, {title: 'lorem1', body: 'lorem ipsum dolo sit ameti'}, {title: 'lorem2', body: 'lorem ipsum dolo sit ameti'}]
+//
+//
+// //     Вывести список комментариев в документ, каждый в своем блоке.
+// //     Добавьте каждому комментарию по кнопке для сворачивания его body.
+//
+// arr.forEach(value => {
+//     let conteiner = document.getElementById('commentCont');
+//     const title = document.createElement('div');
+//     const comment = document.createElement('div');
+//     const button = document.createElement("button");
+//     console.log(value);
+//     title.innerText = value.title;
+//     comment.innerText = value.body;
+//     button.innerText = 'press me';
+//     button.onclick = () => {
+//         comment.style.display === 'none'
+//             ? comment.style.display = 'block'
+//             : comment.style.display = 'none'
+//     }
+//
+//
+//     conteiner.appendChild(title);
+//     conteiner.appendChild(comment);
+//     conteiner.appendChild(button);
+//      });
 
 
 
-
-
-
-
-//     Вывести список комментариев в документ, каждый в своем блоке.
-//     Добавьте каждому комментарию по кнопке для сворачивания его body.
+//
 //
 // - створити 2 форми  по 2 інпути в кожній. ствоирити кнопку при кліку на яку считується та виводиться на консоль інформація з цих 2х форм.
+
+
+
+
 //     Кнопка повинна лежати за межами форм (Щоб ьуникнути  перезавантаження сторінки)
 // Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
 //
