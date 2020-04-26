@@ -139,13 +139,14 @@
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 //
 const xxx = document.getElementById('tableTeg')
-function table(str, yach, teg) {
+function table(str, yach, teg, text) {
     const table = document.createElement('table');
 
     for (let i = 0; i < str; i++) {
         const tr = document.createElement('tr');
         for (let j = 0; j < yach; j++) {
             const td = document.createElement('td');
+            td.innerText = text.value;
             tr.appendChild(td);
         }
         table.appendChild(tr);
@@ -158,28 +159,13 @@ function table(str, yach, teg) {
 };
 
 const colStrok = document.getElementById('colStrok');
-const colYacheek=document.getElementById('colYacheek')
+const colYacheek=document.getElementById('colYacheek');
 const button = document.getElementById('enter');
+const text = document.getElementById('text');
 button.onclick=()=> {
-    table(colStrok.value, colYacheek.value, xxx);
+
+        table(colStrok.value, colYacheek.value, xxx, text);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //
 //
