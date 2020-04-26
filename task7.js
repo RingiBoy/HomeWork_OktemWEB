@@ -139,6 +139,7 @@
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 //
 const xxx = document.getElementById('tableTeg')
+
 function table(str, yach, teg, text) {
     const table = document.createElement('table');
 
@@ -159,12 +160,12 @@ function table(str, yach, teg, text) {
 };
 
 const colStrok = document.getElementById('colStrok');
-const colYacheek=document.getElementById('colYacheek');
+const colYacheek = document.getElementById('colYacheek');
 const button = document.getElementById('enter');
 const text = document.getElementById('text');
-button.onclick=()=> {
+button.onclick = () => {
 
-        table(colStrok.value, colYacheek.value, xxx, text);
+    table(colStrok.value, colYacheek.value, xxx, text);
 }
 
 //
