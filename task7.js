@@ -97,7 +97,17 @@
 // - створити 2 форми  по 2 інпути в кожній. ствоирити кнопку при кліку на яку считується та виводиться на консоль інформація з цих 2х форм.
 
 
+const formText = document.getElementById('text');
+const formText2=document.getElementById('text2');
+const btn = document.getElementById('btn');
+btn.innerText='enter'
 
+
+btn.onclick=(ev)=>{
+    console.log(formText.value);
+    console.log(formText2.value);
+    console.log(ev);
+}
 
 //     Кнопка повинна лежати за межами форм (Щоб ьуникнути  перезавантаження сторінки)
 // Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
