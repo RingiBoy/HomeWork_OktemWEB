@@ -91,35 +91,99 @@
 //      });
 
 
-
 //
 //
 // - створити 2 форми  по 2 інпути в кожній. ствоирити кнопку при кліку на яку считується та виводиться на консоль інформація з цих 2х форм.
 
 
-const formText = document.getElementById('text');
-const formText2=document.getElementById('text2');
-const btn = document.getElementById('btn');
-btn.innerText='enter'
+// const formText = document.getElementById('text');
+// const formText2=document.getElementById('text2');
+// const btn = document.getElementById('btn');
+// btn.innerText='enter'
+//
+//
+// btn.onclick=()=>{
+//     console.log(formText.value);
+//     console.log(formText2.value);
+//
+// }
 
-
-btn.onclick=(ev)=>{
-    console.log(formText.value);
-    console.log(formText2.value);
-    console.log(ev);
-}
-
-//     Кнопка повинна лежати за межами форм (Щоб ьуникнути  перезавантаження сторінки)
-// Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
 //
 // - Створити функцію, яка генерує таблицю.
 //     Перший аргумент визначає кількість строк.
 //     Другий параметр визначає кліькіть ячеєк в кожній строці.
 //     Третій параметр визначає елемент в який потрібно таблицю додати.
+
+// const xxx = document.getElementById('tableTeg')
+// function table(str, yach, teg) {
+//     const table = document.createElement('table');
+// // debugger
+//     for (let i = 0; i < str; i++) {
+//         const tr = document.createElement('tr');
+//         for (let j = 0; j < yach; j++) {
+//             const td = document.createElement('td');
+//             tr.appendChild(td);
+//         }
+//         table.appendChild(tr);
+//     }
 //
+//     teg.appendChild(table)
+//
+//     document.body.appendChild(teg)
+//
+// };
+//
+// table(2,3, xxx);
 //
 // - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
+//
+const xxx = document.getElementById('tableTeg')
+function table(str, yach, teg) {
+    const table = document.createElement('table');
+
+    for (let i = 0; i < str; i++) {
+        const tr = document.createElement('tr');
+        for (let j = 0; j < yach; j++) {
+            const td = document.createElement('td');
+            tr.appendChild(td);
+        }
+        table.appendChild(tr);
+    }
+
+    teg.appendChild(table)
+
+    document.body.appendChild(teg)
+
+};
+
+const colStrok = document.getElementById('colStrok');
+const colYacheek=document.getElementById('colYacheek')
+const button = document.getElementById('enter');
+button.onclick=()=> {
+    table(colStrok.value, colYacheek.value, xxx);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//
+//
 // (Додатковачастина для завдання)
 //
 // - Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
